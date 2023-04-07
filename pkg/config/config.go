@@ -54,6 +54,7 @@ type Task struct {
 	SecurityContext         SecurityContext   `yaml:"securityContext,omitempty"`
 	ServiceAccount          *string           `yaml:"serviceAccount,omitempty"`
 	Annotations             map[string]string `yaml:"annotations,omitempty"`
+	EmptyDirSizeLimit       string            `yaml:"emptyDirSizeLimit"`
 }
 
 // Env value from the event which will be added as env to the job
