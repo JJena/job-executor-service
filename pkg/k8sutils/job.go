@@ -76,6 +76,7 @@ type JobSettings struct {
 	TaskDeadlineSeconds         *int64
 	JobLabels                   map[string]string
 	JesDeploymentName           string
+	JobEmtpyDirVolumeSizeLimit  string
 }
 
 // K8sImpl is used to interact with kubernetes jobs
